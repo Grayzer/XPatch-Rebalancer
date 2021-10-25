@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <!-- ===xpath=== -->
+  <!-- [XPatch] Rebalance - ССС -->
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="MedicineUltratech"]</xpath>
+        <value>
+          <costList>
+            <MedicineHerbal>10</MedicineHerbal>
+            <MedicineIndustrial>2</MedicineIndustrial>
+            <Neutroamine>10</Neutroamine>
+            <Silver>10</Silver>
+            <Gold>5</Gold>
+          </costList>
+          <recipeMaker>
+            <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+            <workSkill>Intellectual</workSkill>
+            <recipeUsers>
+              <li>DrugLab</li>
+            </recipeUsers>
+            <researchPrerequisite>MedicineProduction</researchPrerequisite>
+            <skillRequirements>
+              <Crafting>8</Crafting>
+              <Intellectual>8</Intellectual>
+            </skillRequirements>
+          </recipeMaker>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- ===xpath=== -->
+<!-- [XPatch] Energy Rebalancer - Generators -->
+<!--
+Расчитываем нормальные показатели генерации
+Генератор на дровах считаем основой
+Химтопливный генератор эффективнее в 2 раза (иначе нет смысла делать химтопливо из дров или остального)
+Размер 2х2 считаем базовым по выроботке
+1х1 = 0.5
+2х2 = 1
+3х3 = 1.5
+и т.д.
+WoodFiredGenerator  1200
+ChemfuelPoweredGenerator 2400
+
+VFE_PortableWoodFiredGenerator 600
+VFE_PortableChemfuelPoweredGenerator 1200
+VFE_IndustrialWoodFiredGenerator  1800
+VFE_IndustrialChemfuelPoweredGenerator  3600
+VPE_HelixienGenerator 2800
+VPE_IndustrialHelixienGenerator 4200
+-->
+
+<Operation Class="PatchOperationFindMod">
+<mods>
+<li>Vanilla Furniture Expanded - Power</li>
+</mods>
+  <match Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+
+
+    <li Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="VFE_PortableWoodFiredGenerator"]/comps/li/basePowerConsumption</xpath>
+      <value>
+        <basePowerConsumption>-600</basePowerConsumption>
+      </value>
+    </li>
+
+    <li Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="VFE_PortableChemfuelPoweredGenerator"]/comps/li/basePowerConsumption</xpath>
+      <value>
+        <basePowerConsumption>-1200</basePowerConsumption>
+      </value>
+    </li>
+
+    <li Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="VFE_IndustrialWoodFiredGenerator"]/comps/li/basePowerConsumption</xpath>
+      <value>
+        <basePowerConsumption>-1800</basePowerConsumption>
+      </value>
+    </li>
+
+    <li Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="VFE_IndustrialChemfuelPoweredGenerator"]/comps/li/basePowerConsumption</xpath>
+      <value>
+        <basePowerConsumption>-3600</basePowerConsumption>
+      </value>
+    </li>
+
+    <li Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="VFE_TidalGenerator"]/comps/li/basePowerConsumption</xpath>
+      <value>
+        <basePowerConsumption>-4900</basePowerConsumption>
+      </value>
+    </li>
+
+    <li Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="VPE_HelixienGenerator"]/comps/li/basePowerConsumption</xpath>
+      <value>
+        <basePowerConsumption>-2800</basePowerConsumption>
+      </value>
+    </li>
+
+    <li Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="VPE_IndustrialHelixienGenerator"]/comps/li/basePowerConsumption</xpath>
+      <value>
+        <basePowerConsumption>-4200</basePowerConsumption>
+      </value>
+    </li>
+
+    <li Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="VPE_GasTank"]/comps/li[1]/capacity</xpath>
+      <value>
+        <capacity>1200</capacity>
+      </value>
+    </li>
+
+    <li Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="VPE_HelixienPump"]/comps/li[1]/gasConsumption</xpath>
+      <value>
+        <gasConsumption>-2400</gasConsumption>
+      </value>
+    </li>
+
+    <li Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="VPE_LightningRod"]/comps/li[1]/basePowerConsumption</xpath>
+      <value>
+        <basePowerConsumption>-3200</basePowerConsumption>
+      </value>
+    </li>
+
+
+    </operations>
+  </match>
+</Operation>
+</Patch>

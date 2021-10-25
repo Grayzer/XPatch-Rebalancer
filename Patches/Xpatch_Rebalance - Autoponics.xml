@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- ===xpath=== -->
+<!-- [XPatch] Rebalance - ССС -->
+<Operation Class="PatchOperationFindMod">
+<mods>
+<li>Autoponics</li>
+</mods>
+  <match Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="AutoHydroponicsBasin"]/fertility</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="AutoHydroponicsBasin"]/fertility</xpath>
+          <value>
+            <fertility>5.0</fertility>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="AutoHydroponicsBasin"]/fertility</xpath>
+          <value>
+            <fertility>5.0</fertility>
+          </value>
+        </nomatch>
+      </li>
+
+    </operations>
+  </match>
+</Operation>
+</Patch>

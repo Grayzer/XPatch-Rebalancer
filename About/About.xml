@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<packageId>Mungus.XPath.Rebalancer</packageId>
+	<name>[XPatch] Rebalancer</name>
+	<supportedVersions>
+		<li>1.1</li>
+	</supportedVersions>
+	<author>Mungus</author>
+	<url></url>
+	<description></description>
+
+</ModMetaData>

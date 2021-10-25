@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- ===xpath=== -->
+<!-- [XPatch] Rebalance - Royalty -->
+
+<!--
+<Operation Class="PatchOperationSequence">
+  <success>Normal</success>
+  <operations>
+
+    <li Class="PatchOperationReplace">
+      <xpath>Defs/HediffDef[@ParentName="ImplantHediffBase"][defName="PsychicAmplifier"]/maxSeverity</xpath>
+      <value>
+        <maxSeverity>12</maxSeverity>
+      </value>
+    </li>
+
+    <li Class="PatchOperationReplace">
+      <xpath>Defs/HediffDef[@ParentName="ImplantHediffBase"][defName="PsychicAmplifier"]/stages</xpath>
+      <value>
+        <stages>
+          <li>
+            <minSeverity>1</minSeverity>
+            <statFactors>
+              <PsychicEntropyMax>1.0</PsychicEntropyMax>
+              <PsychicEntropyRecoveryRate>2</PsychicEntropyRecoveryRate>
+            </statFactors>
+          </li>
+          <li>
+            <minSeverity>2</minSeverity>
+            <statFactors>
+              <PsychicEntropyMax>1.3334</PsychicEntropyMax>
+              <PsychicEntropyRecoveryRate>2.25</PsychicEntropyRecoveryRate>
+            </statFactors>
+          </li>
+          <li>
+            <minSeverity>3</minSeverity>
+            <statFactors>
+              <PsychicEntropyMax>1.6667</PsychicEntropyMax>
+              <PsychicEntropyRecoveryRate>2.5</PsychicEntropyRecoveryRate>
+            </statFactors>
+          </li>
+          <li>
+            <minSeverity>4</minSeverity>
+            <statFactors>
+              <PsychicEntropyMax>2.0</PsychicEntropyMax>
+              <PsychicEntropyRecoveryRate>2.75</PsychicEntropyRecoveryRate>
+            </statFactors>
+          </li>
+          <li>
+            <minSeverity>5</minSeverity>
+            <statFactors>
+              <PsychicEntropyMax>2.3334</PsychicEntropyMax>
+              <PsychicEntropyRecoveryRate>3</PsychicEntropyRecoveryRate>
+            </statFactors>
+          </li>
+          <li>
+            <minSeverity>6</minSeverity>
+            <statFactors>
+              <PsychicEntropyMax>2.6667</PsychicEntropyMax>
+              <PsychicEntropyRecoveryRate>3.25</PsychicEntropyRecoveryRate>
+            </statFactors>
+          </li>
+          <li>
+            <minSeverity>7</minSeverity>
+            <statFactors>
+              <PsychicEntropyMax>3.0</PsychicEntropyMax>
+              <PsychicEntropyRecoveryRate>3.5</PsychicEntropyRecoveryRate>
+            </statFactors>
+          </li>
+          <li>
+            <minSeverity>8</minSeverity>
+            <statFactors>
+              <PsychicEntropyMax>3.3334</PsychicEntropyMax>
+              <PsychicEntropyRecoveryRate>3.75</PsychicEntropyRecoveryRate>
+            </statFactors>
+          </li>
+          <li>
+            <minSeverity>9</minSeverity>
+            <statFactors>
+              <PsychicEntropyMax>3.6667</PsychicEntropyMax>
+              <PsychicEntropyRecoveryRate>4.0</PsychicEntropyRecoveryRate>
+            </statFactors>
+          </li>
+          <li>
+            <minSeverity>10</minSeverity>
+            <statFactors>
+              <PsychicEntropyMax>4.0</PsychicEntropyMax>
+              <PsychicEntropyRecoveryRate>4.25</PsychicEntropyRecoveryRate>
+            </statFactors>
+          </li>
+          <li>
+            <minSeverity>11</minSeverity>
+            <statFactors>
+              <PsychicEntropyMax>4.3334</PsychicEntropyMax>
+              <PsychicEntropyRecoveryRate>4.5</PsychicEntropyRecoveryRate>
+            </statFactors>
+          </li>
+          <li>
+            <minSeverity>12</minSeverity>
+            <statFactors>
+              <PsychicEntropyMax>4.6667</PsychicEntropyMax>
+              <PsychicEntropyRecoveryRate>4.75</PsychicEntropyRecoveryRate>
+            </statFactors>
+          </li>
+        </stages>
+      </value>
+    </li>
+
+    <li Class="PatchOperationReplace">
+      <xpath>Defs/FactionDef[defName="Empire"]/royalImplantRules</xpath>
+      <value>
+        <royalImplantRules>
+          <li>
+            <implantHediff>PsychicAmplifier</implantHediff>
+            <maxLevel>1</maxLevel>
+            <minTitle>Yeoman</minTitle>
+          </li>
+          <li>
+            <implantHediff>PsychicAmplifier</implantHediff>
+            <maxLevel>2</maxLevel>
+            <minTitle>Esquire</minTitle>
+          </li>
+          <li>
+            <implantHediff>PsychicAmplifier</implantHediff>
+            <maxLevel>3</maxLevel>
+            <minTitle>Knight</minTitle>
+          </li>
+          <li>
+            <implantHediff>PsychicAmplifier</implantHediff>
+            <maxLevel>4</maxLevel>
+            <minTitle>Praetor</minTitle>
+          </li>
+          <li>
+            <implantHediff>PsychicAmplifier</implantHediff>
+            <maxLevel>5</maxLevel>
+            <minTitle>Baron</minTitle>
+          </li>
+          <li>
+            <implantHediff>PsychicAmplifier</implantHediff>
+            <maxLevel>6</maxLevel>
+            <minTitle>Count</minTitle>
+          </li>
+          <li>
+            <implantHediff>PsychicAmplifier</implantHediff>
+            <maxLevel>9</maxLevel>
+            <minTitle>Duke</minTitle>
+          </li>
+          <li>
+            <implantHediff>PsychicAmplifier</implantHediff>
+            <maxLevel>10</maxLevel>
+            <minTitle>Consul</minTitle>
+          </li>
+          <li>
+            <implantHediff>PsychicAmplifier</implantHediff>
+            <maxLevel>11</maxLevel>
+            <minTitle>Stellarch</minTitle>
+          </li>
+          <li>
+            <implantHediff>PsychicAmplifier</implantHediff>
+            <maxLevel>12</maxLevel>
+            <minTitle>Emperor</minTitle>
+          </li>
+        </royalImplantRules>
+      </value>
+    </li>
+
+
+  </operations>
+</Operation>
+-->
+
+</Patch>

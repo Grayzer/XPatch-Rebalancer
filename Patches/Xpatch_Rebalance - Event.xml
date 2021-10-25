@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- ===xpath=== -->
+<!-- [XPatch] Rebalance - Event -->
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+    <li Class="PatchOperationConditional">
+      <xpath>Defs/IncidentDef[defName="VEE_Earthquake"]</xpath>
+      <match Class="PatchOperationRemove">
+        <xpath>Defs/IncidentDef[defName="VEE_Earthquake"]</xpath>
+      </match>
+      <nomatch/>
+    </li>
+
+    <li Class="PatchOperationConditional">
+      <xpath>Defs/GameConditionDef[defName="RD_Tremors"]</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/GameConditionDef[defName="RD_Tremors"]/canBePermanent</xpath>
+        <value>
+          <canBePermanent>false</canBePermanent>
+        </value>
+      </match>
+      <nomatch/>
+    </li>
+
+
+  </operations>
+</Operation>
+</Patch>

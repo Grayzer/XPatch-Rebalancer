@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- ===xpath=== -->
+<!-- [XPatch] Energy Rebalancer - Generators -->
+<!--
+Расчитываем нормальные показатели генерации
+Генератор на дровах считаем основой
+Химтопливный генератор эффективнее в 2 раза (иначе нет смысла делать химтопливо из дров или остального)
+Размер 2х2 считаем базовым
+1х1 = 0.5
+2х2 = 1
+3х3 = 1.5
+и т.д.
+формулы расчета:
+type: wood=1; chem=2; industrial_wood=1.5; industrial_chem=2.5 (каждый уровень тех. добавляет 0.5)
+size: (lenght*height)/2 т.е. расчитываем средний коэф размера
+base: const=1200
+power = (base * (size / 2))*type
+формула потребления:
+S: площать (для радиусных равна (Pi*r^2)/2))
+Consumable=(S*50)/10  - т.е. 5 ватт на клетку
+Cons=((3.14*14^2)/2)*50/10=1540
+
+WoodFiredGenerator  1200=(1200*((2*2)/2))*1
+ChemfuelPoweredGenerator 2400=(1200*((2*2)/2))*2
+-->
+
+<!--
+<Operation Class="PatchOperationFindMod">
+<mods>
+<li>Empty</li>
+</mods>
+  <match Class="PatchOperationSequence">
+    <success>Normal</success>
+    <operations>
+
+   </operations>
+ </match>
+</Operation>
+-->
+
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+
+    <li Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="WoodFiredGenerator"]/comps/li/basePowerConsumption</xpath>
+      <value>
+        <basePowerConsumption>-1200</basePowerConsumption>
+      </value>
+    </li>
+
+    <li Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="ChemfuelPoweredGenerator"]/comps/li/basePowerConsumption</xpath>
+      <value>
+        <basePowerConsumption>-2400</basePowerConsumption>
+      </value>
+    </li>
+
+    <li Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="SunLamp"]/comps/li/basePowerConsumption</xpath>
+      <value>
+        <basePowerConsumption>1540</basePowerConsumption>
+      </value>
+    </li>
+
+
+  </operations>
+</Operation>
+</Patch>

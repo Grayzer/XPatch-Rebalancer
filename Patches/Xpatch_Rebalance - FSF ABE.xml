@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- ===xpath=== -->
+<!-- [XPatch] Rebalance - ССС -->
+<Operation Class="PatchOperationFindMod">
+<mods>
+<li>[FSF] Advanced Bionics Expansion</li>
+</mods>
+  <match Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+<!-- nnn -->
+<!-- nnn -->
+<!-- nnn -->
+<!-- nnn -->
+<!-- nnn -->
+<!-- nnn -->
+<!-- nnn -->
+<!-- nnn -->
+<!-- nnn -->
+<!-- nnn -->
+
+    </operations>
+  </match>
+</Operation>
+</Patch>

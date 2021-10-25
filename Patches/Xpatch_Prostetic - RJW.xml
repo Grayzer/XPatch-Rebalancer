@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- ===xpath=== -->
+<!--
+- Skill
+Animals
+Artistic
+Construction
+Cooking
+Crafting
+Medical
+Melee
+Mining
+Intellectual
+Plants
+Shooting
+Social
+-->
+
+<Operation Class="PatchOperationFindMod">
+<mods>
+<li>RimJobWorld</li>
+<li>SafeJobWorld</li>
+</mods>
+  <match Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <ResearchProjectDef>
+          <defName>SexyArchotech</defName>
+          <label>archotech sexuality</label>
+          <description>Build high-tech archotech body parts to replace a sexy organs. Requires a skilled doctor to attach.</description>
+          <baseCost>8000</baseCost>
+          <techLevel>Spacer</techLevel>
+          <prerequisites>
+            <li>Fabrication</li>
+          </prerequisites>
+          <hiddenPrerequisites>
+            <li>Bionics</li>
+          </hiddenPrerequisites>
+          <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+          <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+          </requiredResearchFacilities>
+          <researchViewX>18.00</researchViewX>
+          <researchViewY>3.80</researchViewY>
+        </ResearchProjectDef>
+      </value>
+      </li>
+
+        <li Class="PatchOperationAdd">
+        <xpath>/Defs</xpath>
+        <value>
+          <RecipeDef>
+            <defName>Make_ArchotechBreasts</defName>
+              <label>make archotech breasts</label>
+              <description>Make Archotech Breasts.</description>
+              <jobString>Making Archotech Breasts.</jobString>
+              <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+              <effectWorking>Cook</effectWorking>
+              <soundWorking>Recipe_Machining</soundWorking>
+              <allowMixingIngredients>false</allowMixingIngredients>
+              <targetCountAdjustment>1</targetCountAdjustment>
+              <workAmount>21000</workAmount>
+              <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+              <workSkill>Crafting</workSkill>
+              <skillRequirements>
+                <Crafting>16</Crafting>
+                <Intellectual>16</Intellectual>
+              </skillRequirements>
+              <ingredients>
+                <li>
+                  <filter>
+          					<thingDefs>
+          						<li>Hyperweave</li>
+          					</thingDefs>
+          				</filter>
+          				<count>60</count>
+          			</li>
+                <li>
+                  <filter>
+          					<thingDefs>
+          						<li>Plasteel</li>
+          					</thingDefs>
+          				</filter>
+          				<count>30</count>
+          			</li>
+                <li>
+                  <filter>
+          					<thingDefs>
+          						<li>ComponentIndustrial</li>
+          					</thingDefs>
+          				</filter>
+          				<count>20</count>
+          			</li>
+                <li>
+                  <filter>
+          					<thingDefs>
+          						<li>ComponentSpacer</li>
+          					</thingDefs>
+          				</filter>
+          				<count>10</count>
+          			</li>
+              </ingredients>
+              <fixedIngredientFilter>
+          			<thingDefs>
+          				<li>Hyperweave</li>
+          				<li>Plasteel</li>
+                  <li>ComponentIndustrial</li>
+          				<li>ComponentSpacer</li>
+          			</thingDefs>
+          		</fixedIngredientFilter>
+          		<products>
+          			<ArchotechBreasts>1</ArchotechBreasts>
+          		</products>
+          		<recipeUsers>
+          			<li>TableMachining</li>
+                <li>FabricationBench</li>
+          		</recipeUsers>
+          		<researchPrerequisite>SexyArchotech</researchPrerequisite>
+          </RecipeDef>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <RecipeDef>
+          <defName>Make_ArchotechAnus</defName>
+            <label>make archotech anus</label>
+            <description>Make Archotech Anus.</description>
+            <jobString>Making Archotech Anus.</jobString>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <effectWorking>Cook</effectWorking>
+            <soundWorking>Recipe_Machining</soundWorking>
+            <allowMixingIngredients>false</allowMixingIngredients>
+            <targetCountAdjustment>1</targetCountAdjustment>
+            <workAmount>12000</workAmount>
+            <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+            <workSkill>Crafting</workSkill>
+            <skillRequirements>
+              <Crafting>16</Crafting>
+              <Intellectual>16</Intellectual>
+            </skillRequirements>
+            <ingredients>
+              <li>
+                <filter>
+                  <thingDefs>
+                    <li>Hyperweave</li>
+                  </thingDefs>
+                </filter>
+                <count>20</count>
+              </li>
+              <li>
+                <filter>
+                  <thingDefs>
+                    <li>Plasteel</li>
+                  </thingDefs>
+                </filter>
+                <count>15</count>
+              </li>
+              <li>
+                <filter>
+                  <thingDefs>
+                    <li>ComponentIndustrial</li>
+                  </thingDefs>
+                </filter>
+                <count>15</count>
+              </li>
+              <li>
+                <filter>
+                  <thingDefs>
+                    <li>ComponentSpacer</li>
+                  </thingDefs>
+                </filter>
+                <count>5</count>
+              </li>
+            </ingredients>
+            <fixedIngredientFilter>
+              <thingDefs>
+                <li>Hyperweave</li>
+                <li>Plasteel</li>
+                <li>ComponentIndustrial</li>
+                <li>ComponentSpacer</li>
+              </thingDefs>
+            </fixedIngredientFilter>
+            <products>
+              <ArchotechAnus>1</ArchotechAnus>
+            </products>
+            <recipeUsers>
+              <li>TableMachining</li>
+              <li>FabricationBench</li>
+            </recipeUsers>
+            <researchPrerequisite>SexyArchotech</researchPrerequisite>
+        </RecipeDef>
+      </value>
+      </li>
+
+    <li Class="PatchOperationAdd">
+    <xpath>/Defs</xpath>
+    <value>
+      <RecipeDef>
+        <defName>Make_ArchotechVagina</defName>
+          <label>make archotech vagina</label>
+          <description>Make Archotech Vagina.</description>
+          <jobString>Making Archotech Vagina.</jobString>
+          <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+          <effectWorking>Cook</effectWorking>
+          <soundWorking>Recipe_Machining</soundWorking>
+          <allowMixingIngredients>false</allowMixingIngredients>
+          <targetCountAdjustment>1</targetCountAdjustment>
+          <workAmount>16000</workAmount>
+          <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+          <workSkill>Crafting</workSkill>
+          <skillRequirements>
+            <Crafting>16</Crafting>
+            <Intellectual>16</Intellectual>
+          </skillRequirements>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>Hyperweave</li>
+                </thingDefs>
+              </filter>
+              <count>40</count>
+            </li>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>Plasteel</li>
+                </thingDefs>
+              </filter>
+              <count>25</count>
+            </li>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>ComponentIndustrial</li>
+                </thingDefs>
+              </filter>
+              <count>25</count>
+            </li>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>ComponentSpacer</li>
+                </thingDefs>
+              </filter>
+              <count>15</count>
+            </li>
+          </ingredients>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>Hyperweave</li>
+              <li>Plasteel</li>
+              <li>ComponentIndustrial</li>
+              <li>ComponentSpacer</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+          <products>
+            <ArchotechVagina>1</ArchotechVagina>
+          </products>
+          <recipeUsers>
+            <li>TableMachining</li>
+            <li>FabricationBench</li>
+          </recipeUsers>
+          <researchPrerequisite>SexyArchotech</researchPrerequisite>
+      </RecipeDef>
+    </value>
+    </li>
+
+    <li Class="PatchOperationAdd">
+    <xpath>/Defs</xpath>
+    <value>
+      <RecipeDef>
+        <defName>Make_ArchotechPenis</defName>
+          <label>make archotech penis</label>
+          <description>Make Archotech Penis.</description>
+          <jobString>Making Archotech Penis.</jobString>
+          <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+          <effectWorking>Cook</effectWorking>
+          <soundWorking>Recipe_Machining</soundWorking>
+          <allowMixingIngredients>false</allowMixingIngredients>
+          <targetCountAdjustment>1</targetCountAdjustment>
+          <workAmount>14000</workAmount>
+          <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+          <workSkill>Crafting</workSkill>
+          <skillRequirements>
+            <Crafting>16</Crafting>
+            <Intellectual>16</Intellectual>
+          </skillRequirements>
+          <ingredients>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>Hyperweave</li>
+                </thingDefs>
+              </filter>
+              <count>20</count>
+            </li>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>Plasteel</li>
+                </thingDefs>
+              </filter>
+              <count>15</count>
+            </li>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>ComponentIndustrial</li>
+                </thingDefs>
+              </filter>
+              <count>15</count>
+            </li>
+            <li>
+              <filter>
+                <thingDefs>
+                  <li>ComponentSpacer</li>
+                </thingDefs>
+              </filter>
+              <count>10</count>
+            </li>
+          </ingredients>
+          <fixedIngredientFilter>
+            <thingDefs>
+              <li>Hyperweave</li>
+              <li>Plasteel</li>
+              <li>ComponentIndustrial</li>
+              <li>ComponentSpacer</li>
+            </thingDefs>
+          </fixedIngredientFilter>
+          <products>
+            <ArchotechPenis>1</ArchotechPenis>
+          </products>
+          <recipeUsers>
+            <li>TableMachining</li>
+            <li>FabricationBench</li>
+          </recipeUsers>
+          <researchPrerequisite>SexyArchotech</researchPrerequisite>
+      </RecipeDef>
+    </value>
+    </li>
+<!--
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="ArchotechBreasts"]</xpath>
+        <value>
+          <descriptionHyperlinks>
+            <ThingDef>ArchotechBreasts</ThingDef>
+          </descriptionHyperlinks>
+          </value>
+        </li>
+-->
+<!-- Empty -->
+
+   </operations>
+ </match>
+</Operation>
+</Patch>

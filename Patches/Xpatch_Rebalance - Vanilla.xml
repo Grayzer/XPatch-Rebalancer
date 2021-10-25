@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- ===xpath=== -->
+<!-- [XPatch] Rebalance - Vanilla -->
+
+
+<Operation Class="PatchOperationSequence">
+  <success>Always</success>
+  <operations>
+
+    <li Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="HydroponicsBasin"]/fertility</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="HydroponicsBasin"]/fertility</xpath>
+        <value>
+          <fertility>4.0</fertility>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="HydroponicsBasin"]/fertility</xpath>
+        <value>
+          <fertility>4.0</fertility>
+        </value>
+      </nomatch>
+    </li>
+
+    <li Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="Plant_Rice"]/plant/sowTags</xpath>
+      <value>
+        <sowTags>
+          <li>Ground</li>
+          <li>Hydroponic</li>
+        </sowTags>
+      </value>
+    </li>
+<!--
+    <li Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="Plant_Rice"]/plant/sowResearchPrerequisites</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Plant_Rice"]/plant/sowResearchPrerequisites</xpath>
+        <value>
+          <li>Hydroponics</li>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Plant_Rice"]/plant</xpath>
+        <value>
+          <sowResearchPrerequisites>
+          <li>Hydroponics</li>
+          </sowResearchPrerequisites>
+        </value>
+      </nomatch>
+    </li>
+-->
+    <li Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="Plant_Potato"]/plant/sowTags</xpath>
+      <value>
+        <sowTags>
+          <li>Ground</li>
+          <li>Hydroponic</li>
+        </sowTags>
+      </value>
+    </li>
+<!--
+    <li Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="Plant_Potato"]/plant/sowResearchPrerequisites</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Plant_Potato"]/plant/sowResearchPrerequisites</xpath>
+        <value>
+          <li>Hydroponics</li>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Plant_Potato"]/plant</xpath>
+        <value>
+          <sowResearchPrerequisites>
+          <li>Hydroponics</li>
+          </sowResearchPrerequisites>
+        </value>
+      </nomatch>
+    </li>
+-->
+    <li Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="Plant_Corn"]/plant/sowTags</xpath>
+      <value>
+        <sowTags>
+          <li>Ground</li>
+          <li>Hydroponic</li>
+        </sowTags>
+      </value>
+    </li>
+<!--
+    <li Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="Plant_Corn"]/plant/sowResearchPrerequisites</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Plant_Corn"]/plant/sowResearchPrerequisites</xpath>
+        <value>
+          <li>Hydroponics</li>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Plant_Corn"]/plant</xpath>
+        <value>
+          <sowResearchPrerequisites>
+          <li>Hydroponics</li>
+          </sowResearchPrerequisites>
+        </value>
+      </nomatch>
+    </li>
+-->
+    <li Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="Plant_Strawberry"]/plant/sowTags</xpath>
+      <value>
+        <sowTags>
+          <li>Ground</li>
+          <li>Hydroponic</li>
+        </sowTags>
+      </value>
+    </li>
+<!--
+    <li Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="Plant_Strawberry"]/plant/sowResearchPrerequisites</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Plant_Strawberry"]/plant/sowResearchPrerequisites</xpath>
+        <value>
+          <li>Hydroponics</li>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Plant_Strawberry"]/plant</xpath>
+        <value>
+          <sowResearchPrerequisites>
+          <li>Hydroponics</li>
+          </sowResearchPrerequisites>
+        </value>
+      </nomatch>
+    </li>
+-->
+    <li Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="Plant_Haygrass"]/plant/sowTags</xpath>
+      <value>
+        <sowTags>
+          <li>Ground</li>
+          <li>Hydroponic</li>
+        </sowTags>
+      </value>
+    </li>
+<!--
+    <li Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="Plant_Haygrass"]/plant/sowResearchPrerequisites</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Plant_Haygrass"]/plant/sowResearchPrerequisites</xpath>
+        <value>
+          <li>Hydroponics</li>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Plant_Haygrass"]/plant</xpath>
+        <value>
+          <sowResearchPrerequisites>
+          <li>Hydroponics</li>
+          </sowResearchPrerequisites>
+        </value>
+      </nomatch>
+    </li>
+-->
+    <li Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="Plant_Cotton"]/plant/sowTags</xpath>
+      <value>
+        <sowTags>
+          <li>Ground</li>
+          <li>Hydroponic</li>
+        </sowTags>
+      </value>
+    </li>
+<!--
+    <li Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="Plant_Cotton"]/plant/sowResearchPrerequisites</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Plant_Cotton"]/plant/sowResearchPrerequisites</xpath>
+        <value>
+          <li>Hydroponics</li>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Plant_Cotton"]/plant</xpath>
+        <value>
+          <sowResearchPrerequisites>
+          <li>Hydroponics</li>
+          </sowResearchPrerequisites>
+        </value>
+      </nomatch>
+    </li>
+-->
+    <li Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="Plant_Devilstrand"]/plant/sowTags</xpath>
+      <value>
+        <sowTags>
+          <li>Ground</li>
+          <li>Hydroponic</li>
+        </sowTags>
+      </value>
+    </li>
+<!--
+    <li Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="Plant_Devilstrand"]/plant/sowResearchPrerequisites</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Plant_Devilstrand"]/plant/sowResearchPrerequisites</xpath>
+        <value>
+          <li>Hydroponics</li>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Plant_Devilstrand"]/plant</xpath>
+        <value>
+          <sowResearchPrerequisites>
+          <li>Hydroponics</li>
+          </sowResearchPrerequisites>
+        </value>
+      </nomatch>
+    </li>
+-->
+    <li Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="Plant_Healroot"]/plant/sowTags</xpath>
+      <value>
+        <sowTags>
+          <li>Ground</li>
+          <li>Hydroponic</li>
+        </sowTags>
+      </value>
+    </li>
+<!--
+    <li Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="Plant_Healroot"]/plant/sowResearchPrerequisites</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Plant_Healroot"]/plant/sowResearchPrerequisites</xpath>
+        <value>
+          <li>Hydroponics</li>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Plant_Healroot"]/plant</xpath>
+        <value>
+          <sowResearchPrerequisites>
+          <li>Hydroponics</li>
+          </sowResearchPrerequisites>
+        </value>
+      </nomatch>
+    </li>
+-->
+    <li Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="Plant_Hops"]/plant/sowTags</xpath>
+      <value>
+        <sowTags>
+          <li>Ground</li>
+          <li>Hydroponic</li>
+        </sowTags>
+      </value>
+    </li>
+<!--
+    <li Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="Plant_Hops"]/plant/sowResearchPrerequisites</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Plant_Hops"]/plant/sowResearchPrerequisites</xpath>
+        <value>
+          <li>Hydroponics</li>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Plant_Hops"]/plant</xpath>
+        <value>
+          <sowResearchPrerequisites>
+          <li>Hydroponics</li>
+          </sowResearchPrerequisites>
+        </value>
+      </nomatch>
+    </li>
+-->
+    <li Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="Plant_Smokeleaf"]/plant/sowTags</xpath>
+      <value>
+        <sowTags>
+          <li>Ground</li>
+          <li>Hydroponic</li>
+        </sowTags>
+      </value>
+    </li>
+<!--
+    <li Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="Plant_Smokeleaf"]/plant/sowResearchPrerequisites</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Plant_Smokeleaf"]/plant/sowResearchPrerequisites</xpath>
+        <value>
+          <li>Hydroponics</li>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Plant_Smokeleaf"]/plant</xpath>
+        <value>
+          <sowResearchPrerequisites>
+          <li>Hydroponics</li>
+          </sowResearchPrerequisites>
+        </value>
+      </nomatch>
+    </li>
+-->
+    <li Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="Plant_Psychoid"]/plant/sowTags</xpath>
+      <value>
+        <sowTags>
+          <li>Ground</li>
+          <li>Hydroponic</li>
+        </sowTags>
+      </value>
+    </li>
+<!--
+    <li Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="Plant_Psychoid"]/plant/sowResearchPrerequisites</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Plant_Psychoid"]/plant/sowResearchPrerequisites</xpath>
+        <value>
+          <li>Hydroponics</li>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Plant_Psychoid"]/plant</xpath>
+        <value>
+          <sowResearchPrerequisites>
+          <li>Hydroponics</li>
+          </sowResearchPrerequisites>
+        </value>
+      </nomatch>
+    </li>
+-->
+    <li Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="Plant_Ambrosia"]/plant/sowTags</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Plant_Ambrosia"]/plant/sowTags</xpath>
+        <value>
+          <sowTags>
+            <li>Ground</li>
+            <li>Hydroponic</li>
+          </sowTags>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Plant_Ambrosia"]/plant</xpath>
+        <value>
+          <sowTags>
+            <li>Ground</li>
+            <li>Hydroponic</li>
+          </sowTags>
+        </value>
+      </nomatch>
+    </li>
+<!--
+    <li Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="Plant_Ambrosia"]/plant/sowResearchPrerequisites</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Plant_Ambrosia"]/plant/sowResearchPrerequisites</xpath>
+        <value>
+          <li>Hydroponics</li>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Plant_Ambrosia"]/plant</xpath>
+        <value>
+          <sowResearchPrerequisites>
+          <li>Hydroponics</li>
+          </sowResearchPrerequisites>
+        </value>
+      </nomatch>
+    </li>
+-->
+    <li Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="Glowstool"]/plant/sowTags</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Glowstool"]/plant/sowTags</xpath>
+        <value>
+          <sowTags>
+            <li>Ground</li>
+            <li>Hydroponic</li>
+          </sowTags>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Glowstool"]/plant</xpath>
+        <value>
+          <sowTags>
+            <li>Ground</li>
+            <li>Hydroponic</li>
+          </sowTags>
+        </value>
+      </nomatch>
+    </li>
+<!--
+    <li Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="Glowstool"]/plant/sowResearchPrerequisites</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Glowstool"]/plant/sowResearchPrerequisites</xpath>
+        <value>
+          <li>Hydroponics</li>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Glowstool"]/plant</xpath>
+        <value>
+          <sowResearchPrerequisites>
+          <li>Hydroponics</li>
+          </sowResearchPrerequisites>
+        </value>
+      </nomatch>
+    </li>
+-->
+    <li Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="Agarilux"]/plant/sowTags</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Agarilux"]/plant/sowTags</xpath>
+        <value>
+          <sowTags>
+            <li>Ground</li>
+            <li>Hydroponic</li>
+          </sowTags>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Agarilux"]/plant</xpath>
+        <value>
+          <sowTags>
+            <li>Ground</li>
+            <li>Hydroponic</li>
+          </sowTags>
+        </value>
+      </nomatch>
+    </li>
+<!--
+    <li Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="Agarilux"]/plant/sowResearchPrerequisites</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Agarilux"]/plant/sowResearchPrerequisites</xpath>
+        <value>
+          <li>Hydroponics</li>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Agarilux"]/plant</xpath>
+        <value>
+          <sowResearchPrerequisites>
+          <li>Hydroponics</li>
+          </sowResearchPrerequisites>
+        </value>
+      </nomatch>
+    </li>
+-->
+    <li Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="Bryolux"]/plant/sowTags</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Bryolux"]/plant/sowTags</xpath>
+        <value>
+          <sowTags>
+            <li>Ground</li>
+            <li>Hydroponic</li>
+          </sowTags>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Bryolux"]/plant</xpath>
+        <value>
+          <sowTags>
+            <li>Ground</li>
+            <li>Hydroponic</li>
+          </sowTags>
+        </value>
+      </nomatch>
+    </li>
+<!--
+    <li Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="Bryolux"]/plant/sowResearchPrerequisites</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Bryolux"]/plant/sowResearchPrerequisites</xpath>
+        <value>
+          <li>Hydroponics</li>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Bryolux"]/plant</xpath>
+        <value>
+          <sowResearchPrerequisites>
+          <li>Hydroponics</li>
+          </sowResearchPrerequisites>
+        </value>
+      </nomatch>
+    </li>
+-->
+    <li Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="Plant_TreeBamboo"]/plant/sowTags</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Plant_TreeBamboo"]/plant/sowTags</xpath>
+        <value>
+          <sowTags>
+            <li>Ground</li>
+            <li>Hydroponic</li>
+          </sowTags>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Plant_TreeBamboo"]/plant</xpath>
+        <value>
+          <sowTags>
+            <li>Ground</li>
+            <li>Hydroponic</li>
+          </sowTags>
+        </value>
+      </nomatch>
+    </li>
+    <li Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="Plant_TreeBamboo"]/plant/interferesWithRoof</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Plant_TreeBamboo"]/plant/interferesWithRoof</xpath>
+        <value>
+          <interferesWithRoof>false</interferesWithRoof>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Plant_TreeBamboo"]/plant</xpath>
+        <value>
+          <interferesWithRoof>false</interferesWithRoof>
+        </value>
+      </nomatch>
+    </li>
+    <li Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="Plant_TreeBamboo"]/plant/wildOrder</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Plant_TreeBamboo"]/plant/wildOrder</xpath>
+        <value>
+          <wildOrder>2</wildOrder>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Plant_TreeBamboo"]/plant</xpath>
+        <value>
+          <wildOrder>2</wildOrder>
+        </value>
+      </nomatch>
+    </li>
+    <li Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="Plant_TreeBamboo"]/plant/mustBeWildToSow</xpath>
+      <match Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[defName="Plant_TreeBamboo"]/plant/mustBeWildToSow</xpath>
+      </match>
+      <nomatch/>
+    </li>
+<!--
+    <li Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="Plant_TreeBamboo"]/plant/sowResearchPrerequisites</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Plant_TreeBamboo"]/plant/sowResearchPrerequisites</xpath>
+        <value>
+          <li>Hydroponics</li>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Plant_TreeBamboo"]/plant</xpath>
+        <value>
+          <sowResearchPrerequisites>
+          <li>Hydroponics</li>
+          </sowResearchPrerequisites>
+        </value>
+      </nomatch>
+    </li>
+-->
+    <li Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="Plant_Berry"]/plant/sowTags</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Plant_Berry"]/plant/sowTags</xpath>
+        <value>
+          <sowTags>
+            <li>Ground</li>
+            <li>Hydroponic</li>
+          </sowTags>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Plant_Berry"]/plant</xpath>
+        <value>
+          <sowTags>
+            <li>Ground</li>
+            <li>Hydroponic</li>
+          </sowTags>
+        </value>
+      </nomatch>
+    </li>
+<!--
+    <li Class="PatchOperationConditional">
+      <xpath>Defs/ThingDef[defName="Plant_Berry"]/plant/sowResearchPrerequisites</xpath>
+      <match Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Plant_Berry"]/plant/sowResearchPrerequisites</xpath>
+        <value>
+          <li>Hydroponics</li>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Plant_Berry"]/plant</xpath>
+        <value>
+          <sowResearchPrerequisites>
+          <li>Hydroponics</li>
+          </sowResearchPrerequisites>
+        </value>
+      </nomatch>
+    </li>
+-->
+    <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="Plant_Agave"]/plant/sowTags</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="Plant_Agave"]/plant/sowTags</xpath>
+            <value>
+              <sowTags>
+                <li>Ground</li>
+                <li>Hydroponic</li>
+              </sowTags>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="Plant_Agave"]/plant</xpath>
+            <value>
+              <sowTags>
+                <li>Ground</li>
+                <li>Hydroponic</li>
+              </sowTags>
+            </value>
+          </nomatch>
+        </li>
+<!--
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="Plant_Agave"]/plant/sowResearchPrerequisites</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="Plant_Agave"]/plant/sowResearchPrerequisites</xpath>
+            <value>
+              <li>Hydroponics</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="Plant_Agave"]/plant</xpath>
+            <value>
+              <sowResearchPrerequisites>
+              <li>Hydroponics</li>
+              </sowResearchPrerequisites>
+            </value>
+          </nomatch>
+        </li>
+-->
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="Plant_SaguaroCactus"]/plant/sowTags</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="Plant_SaguaroCactus"]/plant/sowTags</xpath>
+            <value>
+              <sowTags>
+                <li>Ground</li>
+                <li>Hydroponic</li>
+              </sowTags>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="Plant_SaguaroCactus"]/plant</xpath>
+            <value>
+              <sowTags>
+                <li>Ground</li>
+                <li>Hydroponic</li>
+              </sowTags>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="Plant_SaguaroCactus"]/plant/interferesWithRoof</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="Plant_SaguaroCactus"]/plant/interferesWithRoof</xpath>
+            <value>
+              <interferesWithRoof>false</interferesWithRoof>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="Plant_SaguaroCactus"]/plant</xpath>
+            <value>
+              <interferesWithRoof>false</interferesWithRoof>
+            </value>
+          </nomatch>
+        </li>
+<!--
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="Plant_SaguaroCactus"]/plant/sowResearchPrerequisites</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="Plant_SaguaroCactus"]/plant/sowResearchPrerequisites</xpath>
+            <value>
+              <li>Hydroponics</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="Plant_SaguaroCactus"]/plant</xpath>
+            <value>
+              <sowResearchPrerequisites>
+              <li>Hydroponics</li>
+              </sowResearchPrerequisites>
+            </value>
+          </nomatch>
+        </li>
+-->
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="VFEM_Plant_Grape"]</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="VFEM_Plant_Grape"]/plant/sowTags</xpath>
+            <value>
+              <sowTags>
+                <li>Ground</li>
+                <li>Hydroponic</li>
+              </sowTags>
+            </value>
+          </match>
+          <nomatch/>
+        </li>
+
+          <li Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="Plant_Chemroot"]</xpath>
+            <match Class="PatchOperationReplace">
+              <xpath>Defs/ThingDef[defName="Plant_Chemroot"]/plant/sowTags</xpath>
+              <value>
+                <sowTags>
+                  <li>Ground</li>
+                  <li>Hydroponic</li>
+                </sowTags>
+              </value>
+            </match>
+            <nomatch/>
+          </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <ThingDef ParentName="PlantBase">
+              <defName>Plant_CocoaBush</defName>
+              <label>cocoa bush</label>
+              <description>A geneticaly modified strawberry plant. Grows cocoa beans instead of strawberries.</description>
+              <statBases>
+                <MaxHitPoints>85</MaxHitPoints>
+                <Nutrition>0.2</Nutrition>
+              </statBases>
+              <graphicData>
+                <texPath>Things/Plants/CocoaBush</texPath>
+                <graphicClass>Graphic_Random</graphicClass>
+              </graphicData>
+              <selectable>true</selectable>
+              <pathCost>10</pathCost>
+              <ingestible>
+                <preferability>RawBad</preferability>
+              </ingestible>
+              <plant>
+                <growDays>8</growDays>
+                <dieIfLeafless>true</dieIfLeafless>
+                <harvestTag>Standard</harvestTag>
+                <harvestedThingDef>Chocolate</harvestedThingDef>
+                <harvestYield>12</harvestYield>
+                <sowMinSkill>6</sowMinSkill>
+                <sowTags>
+                  <li>Ground</li>
+                  <li>Hydroponic</li>
+                </sowTags>
+                <sowResearchPrerequisites>
+                  <li>Cocoa</li>
+                  <li>Hydroponics</li>
+                </sowResearchPrerequisites>
+                <topWindExposure>0.1</topWindExposure>
+                <immatureGraphicPath>Things/Plants/CocoaBush_Immature</immatureGraphicPath>
+                <visualSizeRange>0.3~1.05</visualSizeRange>
+                <wildOrder>2</wildOrder>
+                <purpose>Food</purpose>
+              </plant>
+            </ThingDef>
+          </value>
+        </li>
+
+
+  </operations>
+</Operation>
+</Patch>

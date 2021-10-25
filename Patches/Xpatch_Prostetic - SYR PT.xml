@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- ===xpath=== -->
+<!-- TableSyrProsthetics -->
+
+<Operation Class="PatchOperationFindMod">
+<mods>
+<li>[SYR] Prosthetic Table</li>
+</mods>
+  <match Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="PatchOperationFindMod">
+        <mods>
+          <li>RimJobWorld</li>
+          <li>SafeJobWorld</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+          <success>Always</success>
+          <operations>
+            <li Class="PatchOperationConditional">
+              <xpath>/Defs/RecipeDef[defName="MakePegDick"]/recipeUsers</xpath>
+              <match Class="PatchOperationReplace">
+                <xpath>/Defs/RecipeDef[defName="MakePegDick"]/recipeUsers</xpath>
+                <value>
+                  <recipeUsers>
+                    <li>TableSyrProsthetics</li>
+                  </recipeUsers>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/RecipeDef[defName="MakePegDick"]</xpath>
+                <value>
+                  <recipeUsers>
+                    <li>TableSyrProsthetics</li>
+                  </recipeUsers>
+                </value>
+              </nomatch>
+            </li>
+
+            <li Class="PatchOperationConditional">
+              <xpath>/Defs/RecipeDef[defName="MakeHydraulicPenis"]/recipeUsers</xpath>
+              <match Class="PatchOperationReplace">
+                <xpath>/Defs/RecipeDef[defName="MakeHydraulicPenis"]/recipeUsers</xpath>
+                <value>
+                  <recipeUsers>
+                    <li>TableSyrProsthetics</li>
+                  </recipeUsers>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/RecipeDef[defName="MakeHydraulicPenis"]</xpath>
+                <value>
+                  <recipeUsers>
+                    <li>TableSyrProsthetics</li>
+                  </recipeUsers>
+                </value>
+              </nomatch>
+            </li>
+
+            <li Class="PatchOperationConditional">
+              <xpath>/Defs/RecipeDef[defName="MakeHydraulicVagina"]/recipeUsers</xpath>
+              <match Class="PatchOperationReplace">
+                <xpath>/Defs/RecipeDef[defName="MakeHydraulicVagina"]/recipeUsers</xpath>
+                <value>
+                  <recipeUsers>
+                    <li>TableSyrProsthetics</li>
+                  </recipeUsers>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/RecipeDef[defName="MakeHydraulicVagina"]</xpath>
+                <value>
+                  <recipeUsers>
+                    <li>TableSyrProsthetics</li>
+                  </recipeUsers>
+                </value>
+              </nomatch>
+            </li>
+
+            <li Class="PatchOperationConditional">
+              <xpath>/Defs/RecipeDef[defName="MakeHydraulicBreasts"]/recipeUsers</xpath>
+              <match Class="PatchOperationReplace">
+                <xpath>/Defs/RecipeDef[defName="MakeHydraulicBreasts"]/recipeUsers</xpath>
+                <value>
+                  <recipeUsers>
+                    <li>TableSyrProsthetics</li>
+                  </recipeUsers>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/RecipeDef[defName="MakeHydraulicBreasts"]</xpath>
+                <value>
+                  <recipeUsers>
+                    <li>TableSyrProsthetics</li>
+                  </recipeUsers>
+                </value>
+              </nomatch>
+            </li>
+
+            <li Class="PatchOperationConditional">
+              <xpath>/Defs/RecipeDef[defName="MakeHydraulicAnus"]/recipeUsers</xpath>
+              <match Class="PatchOperationReplace">
+                <xpath>/Defs/RecipeDef[defName="MakeHydraulicAnus"]/recipeUsers</xpath>
+                <value>
+                  <recipeUsers>
+                    <li>TableSyrProsthetics</li>
+                  </recipeUsers>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/RecipeDef[defName="MakeHydraulicAnus"]</xpath>
+                <value>
+                  <recipeUsers>
+                    <li>TableSyrProsthetics</li>
+                  </recipeUsers>
+                </value>
+              </nomatch>
+            </li>
+
+            <li Class="PatchOperationConditional">
+              <xpath>/Defs/RecipeDef[defName="MakeBionicPenis"]/recipeUsers</xpath>
+              <match Class="PatchOperationReplace">
+                <xpath>/Defs/RecipeDef[defName="MakeBionicPenis"]/recipeUsers</xpath>
+                <value>
+                  <recipeUsers>
+                    <li>TableSyrProsthetics</li>
+                  </recipeUsers>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/RecipeDef[defName="MakeBionicPenis"]</xpath>
+                <value>
+                  <recipeUsers>
+                    <li>TableSyrProsthetics</li>
+                  </recipeUsers>
+                </value>
+              </nomatch>
+            </li>
+
+            <li Class="PatchOperationConditional">
+              <xpath>/Defs/RecipeDef[defName="MakeBionicVagina"]/recipeUsers</xpath>
+              <match Class="PatchOperationReplace">
+                <xpath>/Defs/RecipeDef[defName="MakeBionicVagina"]/recipeUsers</xpath>
+                <value>
+                  <recipeUsers>
+                    <li>TableSyrProsthetics</li>
+                  </recipeUsers>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/RecipeDef[defName="MakeBionicVagina"]</xpath>
+                <value>
+                  <recipeUsers>
+                    <li>TableSyrProsthetics</li>
+                  </recipeUsers>
+                </value>
+              </nomatch>
+            </li>
+
+            <li Class="PatchOperationConditional">
+              <xpath>/Defs/RecipeDef[defName="MakeBionicBreasts"]/recipeUsers</xpath>
+              <match Class="PatchOperationReplace">
+                <xpath>/Defs/RecipeDef[defName="MakeBionicBreasts"]/recipeUsers</xpath>
+                <value>
+                  <recipeUsers>
+                    <li>TableSyrProsthetics</li>
+                  </recipeUsers>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/RecipeDef[defName="MakeBionicBreasts"]</xpath>
+                <value>
+                  <recipeUsers>
+                    <li>TableSyrProsthetics</li>
+                  </recipeUsers>
+                </value>
+              </nomatch>
+            </li>
+
+            <li Class="PatchOperationConditional">
+              <xpath>/Defs/RecipeDef[defName="MakeBionicAnus"]/recipeUsers</xpath>
+              <match Class="PatchOperationReplace">
+                <xpath>/Defs/RecipeDef[defName="MakeBionicAnus"]/recipeUsers</xpath>
+                <value>
+                  <recipeUsers>
+                    <li>TableSyrProsthetics</li>
+                  </recipeUsers>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/RecipeDef[defName="MakeBionicAnus"]</xpath>
+                <value>
+                  <recipeUsers>
+                    <li>TableSyrProsthetics</li>
+                  </recipeUsers>
+                </value>
+              </nomatch>
+            </li>
+
+            <li Class="PatchOperationConditional">
+              <xpath>/Defs/RecipeDef[defName="Make_ArchotechBreasts"]/recipeUsers</xpath>
+              <match Class="PatchOperationReplace">
+                <xpath>/Defs/RecipeDef[defName="Make_ArchotechBreasts"]/recipeUsers</xpath>
+                <value>
+                  <recipeUsers>
+                    <li>TableSyrProsthetics</li>
+                  </recipeUsers>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/RecipeDef[defName="Make_ArchotechBreasts"]</xpath>
+                <value>
+                  <recipeUsers>
+                    <li>TableSyrProsthetics</li>
+                  </recipeUsers>
+                </value>
+              </nomatch>
+            </li>
+
+            <li Class="PatchOperationConditional">
+              <xpath>/Defs/RecipeDef[defName="Make_ArchotechAnus"]/recipeUsers</xpath>
+              <match Class="PatchOperationReplace">
+                <xpath>/Defs/RecipeDef[defName="Make_ArchotechAnus"]/recipeUsers</xpath>
+                <value>
+                  <recipeUsers>
+                    <li>TableSyrProsthetics</li>
+                  </recipeUsers>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/RecipeDef[defName="Make_ArchotechAnus"]</xpath>
+                <value>
+                  <recipeUsers>
+                    <li>TableSyrProsthetics</li>
+                  </recipeUsers>
+                </value>
+              </nomatch>
+            </li>
+
+            <li Class="PatchOperationConditional">
+              <xpath>/Defs/RecipeDef[defName="Make_ArchotechVagina"]/recipeUsers</xpath>
+              <match Class="PatchOperationReplace">
+                <xpath>/Defs/RecipeDef[defName="Make_ArchotechVagina"]/recipeUsers</xpath>
+                <value>
+                  <recipeUsers>
+                    <li>TableSyrProsthetics</li>
+                  </recipeUsers>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/RecipeDef[defName="Make_ArchotechVagina"]</xpath>
+                <value>
+                  <recipeUsers>
+                    <li>TableSyrProsthetics</li>
+                  </recipeUsers>
+                </value>
+              </nomatch>
+            </li>
+
+            <li Class="PatchOperationConditional">
+              <xpath>/Defs/RecipeDef[defName="Make_ArchotechPenis"]/recipeUsers</xpath>
+              <match Class="PatchOperationReplace">
+                <xpath>/Defs/RecipeDef[defName="Make_ArchotechPenis"]/recipeUsers</xpath>
+                <value>
+                  <recipeUsers>
+                    <li>TableSyrProsthetics</li>
+                  </recipeUsers>
+                </value>
+              </match>
+              <nomatch Class="PatchOperationAdd">
+                <xpath>/Defs/RecipeDef[defName="Make_ArchotechPenis"]</xpath>
+                <value>
+                  <recipeUsers>
+                    <li>TableSyrProsthetics</li>
+                  </recipeUsers>
+                </value>
+              </nomatch>
+            </li>
+
+          </operations>
+        </match>
+      </li>
+
+   </operations>
+ </match>
+</Operation>
+</Patch>
