@@ -29,6 +29,51 @@
           </recipeMaker>
         </value>
       </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs</xpath>
+          <value>
+            <RecipeDef>
+              <defName>Make_ChemfuelFromHay</defName>
+              <label>make chemfuel from Hay</label>
+              <description>Make a batch of chemfuel by extracting and condensing Hay gas.</description>
+              <jobString>Refining chemfuel from Hay.</jobString>
+              <effectWorking>Cremate</effectWorking>
+              <soundWorking>Recipe_Cremate</soundWorking>
+              <workAmount>2000</workAmount>
+              <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+              <ingredients>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>Hay</li>
+                    </thingDefs>
+                  </filter>
+                  <count>300</count>
+                </li>
+              </ingredients>
+              <fixedIngredientFilter>
+                <thingDefs>
+                  <li>Hay</li>
+                </thingDefs>
+              </fixedIngredientFilter>
+              <products>
+                <Chemfuel>100</Chemfuel>
+              </products>
+              <recipeUsers>
+              <li>BiofuelRefinery</li>
+              </recipeUsers>
+            </RecipeDef>
+          </value>
+      </li>
+<!--
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[@ParentName="BenchBase"][defName="BiofuelRefinery"]/recipes</xpath>
+          <value>
+            <li>Make_ChemfuelFromHay</li>
+          </value>
+      </li>
+-->
     </operations>
   </Operation>
 </Patch>

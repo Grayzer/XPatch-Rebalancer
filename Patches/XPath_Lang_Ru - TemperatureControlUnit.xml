@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <!-- ===xpath=== -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>TemperatureControlUnit</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <!-- BaseTemperatureControlUnit -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="BaseTemperatureControlUnit"]/label</xpath>
+          <value>
+            <label>Базовый контроль температуры</label>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="BaseTemperatureControlUnit"]/description</xpath>
+          <value>
+            <description>Исследуется базовый блок контроля температуры</description>
+          </value>
+        </li>
+        <!-- PrimaryTemperatureControlUnit -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="PrimaryTemperatureControlUnit"]/label</xpath>
+          <value>
+            <label>Первичный контроль температуры</label>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="PrimaryTemperatureControlUnit"]/description</xpath>
+          <value>
+            <description>Исследуется блок контроля первичной температуры</description>
+          </value>
+        </li>
+        <!-- IntermediateTemperatureControlUnit -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="IntermediateTemperatureControlUnit"]/label</xpath>
+          <value>
+            <label>Промежуточный контроль температуры</label>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="IntermediateTemperatureControlUnit"]/description</xpath>
+          <value>
+            <description>Исследуется блок контроля промежуточной температуры</description>
+          </value>
+        </li>
+        <!-- SeniorTemperatureControlUnit -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="SeniorTemperatureControlUnit"]/label</xpath>
+          <value>
+            <label>Расширенный контроль температуры</label>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="SeniorTemperatureControlUnit"]/description</xpath>
+          <value>
+            <description>Исследуется усовершенствованный блок контроля температуры</description>
+          </value>
+        </li>
+        <!-- UltimateTemperatureControlUnit -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="UltimateTemperatureControlUnit"]/label</xpath>
+          <value>
+            <label>Полный контроль температуры</label>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchProjectDef[defName="UltimateTemperatureControlUnit"]/description</xpath>
+          <value>
+            <description>Исследуется полный блок контроля температуры</description>
+          </value>
+        </li>
+        <!-- TemperatureControlUnit -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ResearchTabDef[defName="TemperatureControlUnit"]/label</xpath>
+          <value>
+            <label>Блок контроля температуры</label>
+          </value>
+        </li>
+        <!-- BaseTemperatureControlUnit -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[@ParentName="BuildingBase"][defName="BaseTemperatureControlUnit"]/label</xpath>
+          <value>
+            <label>Базовый термостат</label>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[@ParentName="BuildingBase"][defName="BaseTemperatureControlUnit"]/description</xpath>
+          <value>
+            <description>Базовый термостат может контролировать температуру в помещении на заданном уровне. Однако датчик грубой температуры может срабатывать только тогда, когда разница между температурой окружающей среды и заданной температурой превышает 10 градусов. И из-за незрелой технологии числового управления погрешность контроля температуры базового регулятора температуры также составляет ± 10 ℃. При работе в режиме малой мощности он потребляет 1 Вт мощности.</description>
+          </value>
+        </li>
+        <!-- PrimaryTemperatureControlUnit -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[@ParentName="BuildingBase"][defName="PrimaryTemperatureControlUnit"]/label</xpath>
+          <value>
+            <label>Основной термостат</label>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[@ParentName="BuildingBase"][defName="PrimaryTemperatureControlUnit"]/description</xpath>
+          <value>
+            <description>Основной контроллер температуры модернизировал систему контроля температуры, чтобы уменьшить ошибку основного контроля температуры с 10°C до 5°C. Но датчик по-прежнему определяет разницу температур всего в 10°C.</description>
+          </value>
+        </li>
+        <!-- IntermediateTemperatureControlUnit -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[@ParentName="BuildingBase"][defName="IntermediateTemperatureControlUnit"]/label</xpath>
+          <value>
+            <label>Промежуточный термостат</label>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[@ParentName="BuildingBase"][defName="IntermediateTemperatureControlUnit"]/description</xpath>
+          <value>
+            <description>Контроллер промежуточной температуры модернизировал датчик температуры, который может измерять разницу температур до 5℃.</description>
+          </value>
+        </li>
+        <!-- SeniorTemperatureControlUnit -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[@ParentName="BuildingBase"][defName="SeniorTemperatureControlUnit"]/label</xpath>
+          <value>
+            <label>Усовершенствованный термостат</label>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[@ParentName="BuildingBase"][defName="SeniorTemperatureControlUnit"]/description</xpath>
+          <value>
+            <description>Усовершенствованный контроллер температуры, использующий более совершенную технологию, полностью устраняет ошибку датчика и контроля температуры. Единственным недостатком является то, что температуру нужно постоянно регулировать, поэтому энергосберегающий режим бесполезен.</description>
+          </value>
+        </li>
+        <!-- UltimateTemperatureControlUnit -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[@ParentName="BuildingBase"][defName="UltimateTemperatureControlUnit"]/label</xpath>
+          <value>
+            <label>Ультимативный термостат</label>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[@ParentName="BuildingBase"][defName="UltimateTemperatureControlUnit"]/description</xpath>
+          <value>
+            <description>Контроллер конечной температуры имеет встроенный накопитель тепла и регулирует внутренний и внешний механизм теплообмена в режиме реального времени с помощью датчиков и технологии контроля температуры. Поэтому для процесса теплообмена не требуется дополнительного подвода энергии. Единственными энергозатратами являются датчики и внутренняя механика. Очень низкое потребление энергии.</description>
+          </value>
+        </li>
+      </operations>
+    </match>
+    <nomatch>
+    </nomatch>
+  </Operation>
+</Patch>
