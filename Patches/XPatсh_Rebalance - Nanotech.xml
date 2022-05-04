@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <!-- ===xpath=== -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Nanotech Overpower</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <!-- NanotileArmored -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="Underlay_Metal">
+            <defName>NanotileArmored</defName>
+            <label>armored nanotile</label>
+            <renderPrecedence>240</renderPrecedence>
+            <description>Walking armored tiles made of nanobots. Extremely beautiful and pristine.</description>
+            <color>(120,140,200)</color>
+            <texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
+            <constructEffect>ConstructMetal</constructEffect>
+            <statBases>
+              <WorkToBuild>12</WorkToBuild>
+              <Beauty>500</Beauty>
+              <Cleanliness>2</Cleanliness>
+              <Flammability>0</Flammability>
+            </statBases>
+            <costList>
+              <NT_Nanobots>10</NT_Nanobots>
+            </costList>
+            <layerable>true</layerable>
+            <affordances>
+              <li>Light</li>
+              <li>Medium</li>
+              <li>Heavy</li>
+            </affordances>
+            <tags>
+              <li>FineFloor</li>
+            </tags>
+            <designationCategory>Floors</designationCategory>
+            <fertility>0</fertility>
+            <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+          </TerrainDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+    <nomatch>
+    </nomatch>
+  </Operation>
+</Patch>
